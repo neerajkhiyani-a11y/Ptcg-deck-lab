@@ -1,7 +1,8 @@
 """Lookahead agent: for each main-phase option, sample hidden info, play the rest of the
 turn and the opponent's reply with the heuristic policy inside the engine's search, then
 score the resulting board. Picks the option with the best average score."""
-import random
+import random, os
+DEBUG = bool(os.environ.get("LA_DEBUG"))
 from collections import Counter
 from lab import agents as A, search as S
 from lab.cards import CARD
@@ -98,9 +99,17 @@ def evaluate(cur, me_i):
         if not tgt:
             return 0
         best = 0
-        for p in [x for x in att_pl["active"] + att_pl["bench"] if x]:
-            d, ok = A.best_attack_value(p, tgt)
-            if ok:
+        for k, p in enumerate([x for x in att_pl["active"] + att_pl["bench"] if x]):
+            cd = CARD.get(p["id"])
+            if not cd:
+                continue
+            for aid in cd["attacks"]:
+                atk = A.ATTACK[aid]
+                miss = A.missing_energy(p.get("energies", []), atk["energies"])
+                if miss > 1:
+                    continue
+                d = A.est_damage(atk, cd, CARD.get(tgt["id"]), p, tgt)
+                d *= (1.0 if miss == 0 else 0.7) * (1.0 if k == 0 else 0.8)  # one attach / a switch away
                 best = max(best, d)
         ko = best >= tgt["hp"]
         return min(best, tgt["hp"]) / 10 + (40 * A.prize_value(CARD.get(tgt["id"], {})) if ko else 0)
@@ -164,4 +173,6 @@ class Lookahead:
             return self.pol_me(obs)
         # tie-break toward heuristic preference
         best = max(scored, key=lambda x: (round(x[0], 3), hs[x[1]]))
+        if DEBUG and any(opts[k]["type"] == A.OATTACK for _, k in scored):
+            print("   LA", obs["current"]["turn"], [(opts[k]["type"], round(v)) for v, k in sorted(scored, reverse=True)], "->", opts[best[1]]["type"])
         return [best[1]]

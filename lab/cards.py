@@ -108,15 +108,23 @@ def _limitless_card_meta(setcode, num):
 
 def to_engine_deck(rows):
     """rows: list of (count, name, set, num). Returns (60 ids, notes)."""
-    ids, notes = [], []
+    ids, notes, missing = [], [], []
     for count, name, st, num in rows:
         hp, at = _limitless_card_meta(st, num)
         c, note = resolve(name, hp, at)
         if note:
             notes.append(note)
         if c is None:
+            missing.append((count, name))
             continue
         ids += [c["cardId"]] * count
+    # fill cards the engine lacks with the deck's most common basic energy (neutral filler)
+    if missing:
+        basics = [i for i in ids if CARD[i]["cardType"] == BASIC_ENERGY]
+        filler = max(set(basics), key=basics.count) if basics else ids[0]
+        for count, name in missing:
+            ids += [filler] * count
+            notes.append(f"filled {count}x {name} with {CARD[filler]['name']}")
     return ids, notes
 
 
