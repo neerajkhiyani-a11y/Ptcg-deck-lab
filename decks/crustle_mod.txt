@@ -28,4 +28,4 @@ Energy: 14
 4 Mist Energy TEF 161
 4 Spiky Energy JTG 159
 1 Grass Energy MEE 9
-1 Fighting Energy MEE 14
+1 Rocky Fighting Energy POR 87
