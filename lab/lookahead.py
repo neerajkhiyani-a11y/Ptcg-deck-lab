@@ -118,12 +118,12 @@ def evaluate(cur, me_i):
 
 
 class Lookahead:
-    def __init__(self, my_deck, opp_deck, samples=3, horizon_turns=2, seed=0):
+    def __init__(self, my_deck, opp_deck, samples=3, horizon_turns=2, seed=0, plan=None, opp_plan=None):
         self.my_deck, self.opp_deck = my_deck, opp_deck
         self.samples, self.horizon = samples, horizon_turns
         self.rng = random.Random(seed)
-        self.pol_me = A.make("heuristic", my_deck)
-        self.pol_op = A.make("heuristic", opp_deck)
+        self.pol_me = A.make("heuristic", my_deck, plan=plan)
+        self.pol_op = A.make("heuristic", opp_deck, plan=opp_plan)
 
     def rollout(self, sid, o, me_i, start_turn):
         steps = 0

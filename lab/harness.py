@@ -32,9 +32,9 @@ def play_game(deck0, deck1, agent0, agent1, seed=None, max_steps=5000, reverse=F
 
 
 def _worker(args):
-    deck0, deck1, a0_name, a1_name, seeds = args
+    deck0, deck1, a0_name, a1_name, seeds, plan0, plan1 = args
     from lab import agents as A
-    a0, a1 = A.make(a0_name, deck0, deck1), A.make(a1_name, deck1, deck0)
+    a0, a1 = A.make(a0_name, deck0, deck1, plan=plan0), A.make(a1_name, deck1, deck0, plan=plan1)
     res = []
     for s in seeds:
         # alternate seat to remove first-player bias: odd seeds swap seats
@@ -48,13 +48,13 @@ def _worker(args):
     return res
 
 
-def match(deck0, deck1, agent0="heuristic", agent1="heuristic", n=200, procs=None, seed0=0):
+def match(deck0, deck1, agent0="heuristic", agent1="heuristic", n=200, procs=None, seed0=0, plan0=None, plan1=None):
     procs = procs or max(1, min(mp.cpu_count(), 8))
     seeds = list(range(seed0, seed0 + n))
     chunks = [seeds[i::procs] for i in range(procs)]
     t = time.time()
     with mp.get_context("fork").Pool(procs) as pool:
-        out = pool.map(_worker, [(deck0, deck1, agent0, agent1, c) for c in chunks])
+        out = pool.map(_worker, [(deck0, deck1, agent0, agent1, c, plan0, plan1) for c in chunks])
     res = [r for chunk in out for r in chunk]
     w = sum(1 for r, _ in res if r == 0)
     l = sum(1 for r, _ in res if r == 1)

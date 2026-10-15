@@ -204,13 +204,28 @@ def in_play(pl):
 KB = {"evos": {}}  # name -> list of evolution card dicts in our deck (set per agent call)
 
 
-def build_kb(deck):
+def build_kb(deck, plan=None):
+    """plan: ordered list of main attacker names (deck game plan); their whole lines get priority."""
     evos = {}
     for cid in set(deck):
         cd = CARD[cid]
         if cd["cardType"] == POKEMON and cd.get("evolvesFrom"):
             evos.setdefault(cd["evolvesFrom"], []).append(cd)
-    return {"evos": evos}
+    prio = {}
+    for rank, name in enumerate(plan or []):
+        bonus = 25 - 8 * rank
+        prio[name] = max(prio.get(name, 0), bonus)
+        # pre-evolutions of a plan attacker share its priority
+        frm = next((CARD[c]["evolvesFrom"] for c in set(deck) if CARD[c]["name"] == name), None)
+        while frm:
+            prio[frm] = max(prio.get(frm, 0), bonus)
+            frm = next((CARD[c]["evolvesFrom"] for c in set(deck) if CARD[c]["name"] == frm), None)
+    return {"evos": evos, "prio": prio}
+
+
+def plan_bonus(card, kb=None):
+    kb = kb or KB
+    return kb.get("prio", {}).get(CARD[card["id"]]["name"], 0) if card else 0
 
 
 def line_best(cd, kb, depth=0, poke=None):
@@ -241,6 +256,7 @@ def attach_value(me, tgt, is_active, ecd, kb=None):
     if not tcd:
         return -20
     dmg, need = line_best(tcd, kb, 0, tgt)
+    pb = plan_bonus(tgt, kb)
     if not need and dmg == 0:
         return -30
     have = list(tgt.get("energies", []))
@@ -248,7 +264,7 @@ def attach_value(me, tgt, is_active, ecd, kb=None):
     mb, ma = missing_energy(have, need), missing_energy(have + [et], need)
     if ma >= mb:  # doesn't progress the main attack (maybe retreat value)
         return -25
-    v = dmg / 10 - 3 * ma
+    v = dmg / 10 - 3 * ma + pb
     if ma == 0:
         v += 10
         # immediate attack enabled for the active (own attacks, not evolution)
@@ -270,14 +286,15 @@ def card_value(obs, card):
     names_in_play = {CARD[p["id"]]["name"] for p in in_play(me)}
     hand_names = {CARD[c["id"]]["name"] for c in (me.get("hand") or [])}
     if t == POKEMON:
+        pb = plan_bonus(card)
         if cd["basic"]:
-            v = 55 if len(me["bench"]) < me["benchMax"] else 10
+            v = (55 if len(me["bench"]) < me["benchMax"] else 10) + pb
             # basics whose evolution we hold are worth more
             if any(CARD[c["id"]].get("evolvesFrom") == cd["name"] for c in (me.get("hand") or [])):
                 v += 15
             return v
         if cd.get("evolvesFrom") in names_in_play:
-            return 95
+            return 95 + pb
         if cd.get("evolvesFrom") in hand_names:
             return 60
         return 40
@@ -521,7 +538,7 @@ def choose(obs, kb=None):
 
 
 # ---------------------------------------------------------------- agent factories
-def make(name, deck, opp_deck=None):
+def make(name, deck, opp_deck=None, plan=None):
     if name == "random":
         def a(obs):
             s = obs["select"]
@@ -529,10 +546,10 @@ def make(name, deck, opp_deck=None):
             return random.sample(range(len(s["option"])), k)
         return a
     if name == "heuristic":
-        kb = build_kb(deck)
+        kb = build_kb(deck, plan)
         return lambda obs: choose(obs, kb)
     if name.startswith("lookahead"):
         from lab.lookahead import Lookahead
         samples = int(name.split(":")[1]) if ":" in name else 3
-        return Lookahead(deck, opp_deck or deck, samples=samples)
+        return Lookahead(deck, opp_deck or deck, samples=samples, plan=plan)
     raise ValueError(name)
