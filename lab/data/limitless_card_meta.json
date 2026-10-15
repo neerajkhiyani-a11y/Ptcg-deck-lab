@@ -1,0 +1,1178 @@
+{
+"MEG_104": {
+"hp": 300,
+"attacks": [
+"rapid-fire combo"
+]
+},
+"DRI_11": {
+"hp": 70,
+"attacks": [
+"ascension"
+]
+},
+"DRI_12": {
+"hp": 150,
+"attacks": [
+"superb scissors"
+]
+},
+"DRI_176": {
+"hp": null,
+"attacks": []
+},
+"MEG_119": {
+"hp": null,
+"attacks": []
+},
+"MEG_114": {
+"hp": null,
+"attacks": []
+},
+"TEF_146": {
+"hp": null,
+"attacks": []
+},
+"WHT_84": {
+"hp": null,
+"attacks": []
+},
+"SFA_64": {
+"hp": null,
+"attacks": []
+},
+"MEG_123": {
+"hp": null,
+"attacks": []
+},
+"PFL_91": {
+"hp": null,
+"attacks": []
+},
+"SVI_186": {
+"hp": null,
+"attacks": []
+},
+"TEF_144": {
+"hp": 70,
+"attacks": []
+},
+"CRI_82": {
+"hp": null,
+"attacks": []
+},
+"MEG_130": {
+"hp": null,
+"attacks": []
+},
+"MEG_131": {
+"hp": null,
+"attacks": []
+},
+"TWM_148": {
+"hp": null,
+"attacks": []
+},
+"TWM_150": {
+"hp": null,
+"attacks": []
+},
+"TEF_152": {
+"hp": 100,
+"attacks": []
+},
+"POR_77": {
+"hp": null,
+"attacks": null
+},
+"TWM_149": {
+"hp": null,
+"attacks": []
+},
+"DRI_173": {
+"hp": null,
+"attacks": []
+},
+"POR_86": {
+"hp": 20,
+"attacks": []
+},
+"TEF_161": {
+"hp": null,
+"attacks": []
+},
+"JTG_159": {
+"hp": null,
+"attacks": []
+},
+"MEE_9": {
+"hp": null,
+"attacks": []
+},
+"MEG_76": {
+"hp": 80,
+"attacks": [
+"accelerating stab"
+]
+},
+"MEG_77": {
+"hp": 340,
+"attacks": [
+"aura jab",
+"mega brave"
+]
+},
+"MEG_75": {
+"hp": 110,
+"attacks": [
+"cosmic beam"
+]
+},
+"MEG_72": {
+"hp": 80,
+"attacks": [
+"corkscrew punch",
+"confront"
+]
+},
+"MEG_73": {
+"hp": 150,
+"attacks": [
+"wild press"
+]
+},
+"MEG_74": {
+"hp": 110,
+"attacks": [
+"power gem"
+]
+},
+"POR_62": {
+"hp": 170,
+"attacks": [
+"tuck tail"
+]
+},
+"POR_76": {
+"hp": null,
+"attacks": []
+},
+"MEG_132": {
+"hp": null,
+"attacks": []
+},
+"MEG_116": {
+"hp": null,
+"attacks": []
+},
+"POR_81": {
+"hp": null,
+"attacks": []
+},
+"MEG_124": {
+"hp": null,
+"attacks": []
+},
+"TWM_165": {
+"hp": null,
+"attacks": []
+},
+"ASC_181": {
+"hp": null,
+"attacks": []
+},
+"SSP_177": {
+"hp": 30,
+"attacks": []
+},
+"MEE_14": {
+"hp": null,
+"attacks": []
+},
+"PFL_67": {
+"hp": 70,
+"attacks": [
+"call for family",
+"playful kick"
+]
+},
+"PFL_68": {
+"hp": 140,
+"attacks": [
+"gentle slap"
+]
+},
+"TWM_95": {
+"hp": 110,
+"attacks": [
+"mind bend"
+]
+},
+"TWM_118": {
+"hp": 120,
+"attacks": [
+"poison spray",
+"relentless punches"
+]
+},
+"SVP_149": {
+"hp": 80,
+"attacks": [
+"poison chain"
+]
+},
+"SFA_39": {
+"hp": 190,
+"attacks": [
+"irritated outburst"
+]
+},
+"PBL_59": {
+"hp": 90,
+"attacks": [
+"whirling envy"
+]
+},
+"DRI_128": {
+"hp": 80,
+"attacks": [
+"scratch",
+"strike the sleeper"
+]
+},
+"MEG_88": {
+"hp": 110,
+"attacks": [
+"clutch",
+"dark feather"
+]
+},
+"DRI_10": {
+"hp": 80,
+"attacks": [
+"smash kick"
+]
+},
+"MEG_86": {
+"hp": 280,
+"attacks": [
+"terminal period",
+"claw of darkness"
+]
+},
+"ASC_142": {
+"hp": 210,
+"attacks": [
+"cruel arrow"
+]
+},
+"TWM_151": {
+"hp": null,
+"attacks": []
+},
+"ASC_196": {
+"hp": null,
+"attacks": []
+},
+"DRI_178": {
+"hp": null,
+"attacks": []
+},
+"MEG_115": {
+"hp": null,
+"attacks": []
+},
+"DRI_164": {
+"hp": null,
+"attacks": []
+},
+"TWM_163": {
+"hp": null,
+"attacks": []
+},
+"DRI_180": {
+"hp": null,
+"attacks": []
+},
+"MEE_15": {
+"hp": null,
+"attacks": []
+},
+"DRI_127": {
+"hp": 80,
+"attacks": [
+"deceit",
+"torment"
+]
+},
+"ASC_127": {
+"hp": 130,
+"attacks": [
+"rocket feathers",
+"hammer in"
+]
+},
+"DRI_153": {
+"hp": 60,
+"attacks": [
+"hacking"
+]
+},
+"DRI_154": {
+"hp": 90,
+"attacks": [
+"r command"
+]
+},
+"DRI_51": {
+"hp": 120,
+"attacks": [
+"dark frost"
+]
+},
+"DRI_170": {
+"hp": null,
+"attacks": []
+},
+"DRI_171": {
+"hp": null,
+"attacks": []
+},
+"DRI_177": {
+"hp": null,
+"attacks": []
+},
+"DRI_174": {
+"hp": null,
+"attacks": []
+},
+"PRE_127": {
+"hp": null,
+"attacks": []
+},
+"SSP_183": {
+"hp": null,
+"attacks": []
+},
+"TWM_158": {
+"hp": null,
+"attacks": []
+},
+"DRI_182": {
+"hp": null,
+"attacks": []
+},
+"WHT_86": {
+"hp": null,
+"attacks": null
+},
+"PRE_35": {
+"hp": 60,
+"attacks": [
+"come and get you",
+"mumble"
+]
+},
+"PRE_36": {
+"hp": null,
+"attacks": null
+},
+"PRE_37": {
+"hp": 160,
+"attacks": [
+"shadow bind"
+]
+},
+"MEG_54": {
+"hp": 50,
+"attacks": [
+"teleportation attack"
+]
+},
+"TWM_80": {
+"hp": 40,
+"attacks": [
+"beam"
+]
+},
+"MEG_55": {
+"hp": 80,
+"attacks": [
+"super psy bolt"
+]
+},
+"MEG_56": {
+"hp": 140,
+"attacks": [
+"powerful hand"
+]
+},
+"ASC_16": {
+"hp": 30,
+"attacks": [
+"0 itchy pollen"
+]
+},
+"PFL_87": {
+"hp": null,
+"attacks": []
+},
+"PBL_78": {
+"hp": null,
+"attacks": []
+},
+"MEG_125": {
+"hp": null,
+"attacks": []
+},
+"MEG_128": {
+"hp": null,
+"attacks": []
+},
+"DRI_168": {
+"hp": null,
+"attacks": []
+},
+"TEF_157": {
+"hp": null,
+"attacks": []
+},
+"POR_88": {
+"hp": null,
+"attacks": null
+},
+"MEE_13": {
+"hp": null,
+"attacks": []
+},
+"TWM_128": {
+"hp": 70,
+"attacks": [
+"petty grudge",
+"bite"
+]
+},
+"TWM_129": {
+"hp": 90,
+"attacks": [
+"dragon headbutt"
+]
+},
+"TWM_130": {
+"hp": 320,
+"attacks": [
+"jet headbutt",
+"phantom dive"
+]
+},
+"TEF_128": {
+"hp": 60,
+"attacks": [
+"gnaw",
+"dig"
+]
+},
+"TEF_129": {
+"hp": 140,
+"attacks": [
+"land crush"
+]
+},
+"JTG_121": {
+"hp": 270,
+"attacks": [
+"tenacious tail",
+"destructive drill"
+]
+},
+"SCR_133": {
+"hp": null,
+"attacks": []
+},
+"POR_84": {
+"hp": null,
+"attacks": []
+},
+"POR_71": {
+"hp": null,
+"attacks": []
+},
+"MEG_127": {
+"hp": null,
+"attacks": []
+},
+"MEE_10": {
+"hp": null,
+"attacks": []
+},
+"30C_66": {
+"hp": 160,
+"attacks": [
+"teleportation burst"
+]
+},
+"JTG_56": {
+"hp": 190,
+"attacks": [
+"full moon rondo"
+]
+},
+"SSP_76": {
+"hp": 210,
+"attacks": [
+"eon blade"
+]
+},
+"TWM_64": {
+"hp": 210,
+"attacks": [
+"sob",
+"torrential pump"
+]
+},
+"TEF_81": {
+"hp": 220,
+"attacks": [
+"twin shotels"
+]
+},
+"30C_102": {
+"hp": 160,
+"attacks": [
+"wish granter",
+"swift"
+]
+},
+"30C_72": {
+"hp": 80,
+"attacks": [
+"mysterious signal"
+]
+},
+"SSP_56": {
+"hp": 120,
+"attacks": [
+"icicle loop"
+]
+},
+"ASC_121": {
+"hp": 230,
+"attacks": [
+"orichalcum fang",
+"impact blow"
+]
+},
+"TEF_145": {
+"hp": null,
+"attacks": []
+},
+"SSP_170": {
+"hp": null,
+"attacks": []
+},
+"SSP_175": {
+"hp": null,
+"attacks": []
+},
+"PFL_94": {
+"hp": null,
+"attacks": []
+},
+"SCR_131": {
+"hp": null,
+"attacks": []
+},
+"MEE_11": {
+"hp": null,
+"attacks": []
+},
+"DRI_40": {
+"hp": 70,
+"attacks": [
+"collect",
+"combustion"
+]
+},
+"DRI_41": {
+"hp": 100,
+"attacks": [
+"combustion",
+"double kick"
+]
+},
+"JTG_24": {
+"hp": 320,
+"attacks": [
+"smolder-sault"
+]
+},
+"TWM_39": {
+"hp": 110,
+"attacks": [
+"allure",
+"ground melter"
+]
+},
+"PFL_60": {
+"hp": 70,
+"attacks": [
+"reckless charge"
+]
+},
+"PFL_61": {
+"hp": 330,
+"attacks": [
+"greedy fang",
+"hungry jaws"
+]
+},
+"TWM_131": {
+"hp": 70,
+"attacks": [
+"surf"
+]
+},
+"PRE_95": {
+"hp": null,
+"attacks": []
+},
+"PBL_5": {
+"hp": 30,
+"attacks": [
+"furtive drop"
+]
+},
+"PBL_6": {
+"hp": 60,
+"attacks": [
+"matcha spin"
+]
+},
+"PBL_39": {
+"hp": 140,
+"attacks": [
+"vengeful anchor"
+]
+},
+"PBL_33": {
+"hp": 50,
+"attacks": [
+"hang down"
+]
+},
+"PBL_34": {
+"hp": 80,
+"attacks": [
+"puppet pull"
+]
+},
+"JTG_120": {
+"hp": 70,
+"attacks": [
+"trading places",
+"ram"
+]
+},
+"TEF_147": {
+"hp": null,
+"attacks": []
+},
+"CRI_80": {
+"hp": null,
+"attacks": []
+},
+"TWM_167": {
+"hp": null,
+"attacks": []
+},
+"TWM_25": {
+"hp": 210,
+"attacks": [
+"myriad leaf shower"
+]
+},
+"ASC_8": {
+"hp": 70,
+"attacks": [
+"growl",
+"seed bomb"
+]
+},
+"MEG_9": {
+"hp": 110,
+"attacks": [
+"push down"
+]
+},
+"MEG_10": {
+"hp": 160,
+"attacks": [
+"solar beam"
+]
+},
+"TWM_17": {
+"hp": 40,
+"attacks": [
+"tumbling attack"
+]
+},
+"TWM_18": {
+"hp": 80,
+"attacks": [
+"do the wave"
+]
+},
+"SCR_14": {
+"hp": 330,
+"attacks": [
+"syrup storm"
+]
+},
+"MEG_12": {
+"hp": 80,
+"attacks": [
+"traverse time",
+"solar cutter"
+]
+},
+"SFA_6": {
+"hp": 140,
+"attacks": [
+"wood hammer"
+]
+},
+"TWM_155": {
+"hp": null,
+"attacks": []
+},
+"SCR_132": {
+"hp": null,
+"attacks": []
+},
+"TWM_143": {
+"hp": null,
+"attacks": []
+},
+"MEG_117": {
+"hp": null,
+"attacks": []
+},
+"SCR_57": {
+"hp": 80,
+"attacks": [
+"dangle tail",
+"tackle"
+]
+},
+"SCR_58": {
+"hp": 120,
+"attacks": [
+"seek inspiration",
+"super psy bolt"
+]
+},
+"CRI_61": {
+"hp": 180,
+"attacks": [
+"bounce back",
+"metallic hammer"
+]
+},
+"SFA_47": {
+"hp": 130,
+"attacks": [
+"trifrost"
+]
+},
+"DRI_78": {
+"hp": 100,
+"attacks": [
+"scratch",
+"thunder raid"
+]
+},
+"SFA_54": {
+"hp": null,
+"attacks": []
+},
+"TWM_166": {
+"hp": null,
+"attacks": []
+},
+"SFA_40": {
+"hp": 110,
+"attacks": [
+"magnetic blast"
+]
+},
+"PFL_85": {
+"hp": null,
+"attacks": []
+},
+"SSP_191": {
+"hp": null,
+"attacks": []
+},
+"TEF_123": {
+"hp": 240,
+"attacks": [
+"burst roar",
+"bellowing thunder"
+]
+},
+"TEF_25": {
+"hp": 220,
+"attacks": [
+"prism edge"
+]
+},
+"SCR_135": {
+"hp": null,
+"attacks": []
+},
+"MEE_12": {
+"hp": null,
+"attacks": []
+},
+"TWM_126": {
+"hp": 40,
+"attacks": [
+"find a friend",
+"rolling tackle"
+]
+},
+"MEP_52": {
+"hp": 70,
+"attacks": [
+"branch poke"
+]
+},
+"TWM_15": {
+"hp": 100,
+"attacks": [
+"beat"
+]
+},
+"TWM_44": {
+"hp": 50,
+"attacks": [
+"whirlpool"
+]
+},
+"PRE_21": {
+"hp": 110,
+"attacks": [
+"rapid draw"
+]
+},
+"TEF_23": {
+"hp": 50,
+"attacks": [
+"slight intrusion"
+]
+},
+"TEF_24": {
+"hp": 70,
+"attacks": [
+"psychic"
+]
+},
+"ASC_39": {
+"hp": 70,
+"attacks": [
+"ram"
+]
+},
+"PBL_77": {
+"hp": null,
+"attacks": []
+},
+"TWM_154": {
+"hp": null,
+"attacks": []
+},
+"WHT_80": {
+"hp": null,
+"attacks": []
+},
+"TEF_142": {
+"hp": 30,
+"attacks": []
+},
+"CRI_70": {
+"hp": 70,
+"attacks": [
+"bite"
+]
+},
+"TWM_153": {
+"hp": null,
+"attacks": []
+},
+"PBL_66": {
+"hp": 70,
+"attacks": [
+"double stab"
+]
+},
+"PBL_67": {
+"hp": 90,
+"attacks": [
+"fly"
+]
+},
+"PBL_68": {
+"hp": 150,
+"attacks": [
+"feather rondo"
+]
+},
+"SCR_118": {
+"hp": 70,
+"attacks": [
+"assault landing"
+]
+},
+"SSP_111": {
+"hp": 110,
+"attacks": [
+"coordinated throwing"
+]
+},
+"JTG_146": {
+"hp": null,
+"attacks": []
+},
+"PBL_46": {
+"hp": 70,
+"attacks": [
+"call for family",
+"dig claws"
+]
+},
+"PBL_65": {
+"hp": 340,
+"attacks": [
+"undermine",
+"maximum drilling"
+]
+},
+"CRI_59": {
+"hp": 70,
+"attacks": [
+"headbutt",
+"beam"
+]
+},
+"TEF_114": {
+"hp": 100,
+"attacks": [
+"beam"
+]
+},
+"BLK_67": {
+"hp": 220,
+"attacks": [
+"protect charge"
+]
+},
+"MEE_16": {
+"hp": null,
+"attacks": []
+},
+"DRI_134": {
+"hp": 70,
+"attacks": [
+"filch",
+"corkscrew punch"
+]
+},
+"DRI_135": {
+"hp": 100,
+"attacks": [
+"corkscrew punch"
+]
+},
+"DRI_136": {
+"hp": 320,
+"attacks": [
+"shadow bullet"
+]
+},
+"ASC_46": {
+"hp": 70,
+"attacks": [
+"chilly"
+]
+},
+"TWM_53": {
+"hp": 90,
+"attacks": [
+"frost smash"
+]
+},
+"JTG_8": {
+"hp": 110,
+"attacks": [
+"corner"
+]
+},
+"DRI_169": {
+"hp": null,
+"attacks": []
+},
+"DRI_102": {
+"hp": 70,
+"attacks": [
+"rock hurl"
+]
+},
+"DRI_103": {
+"hp": 100,
+"attacks": [
+"dragonslice"
+]
+},
+"DRI_104": {
+"hp": 330,
+"attacks": [
+"corkscrew dive",
+"draconic buster"
+]
+},
+"DRI_7": {
+"hp": 70,
+"attacks": [
+"spike sting"
+]
+},
+"DRI_8": {
+"hp": 130,
+"attacks": [
+"leaf step"
+]
+},
+"DRI_129": {
+"hp": 70,
+"attacks": [
+"raging curse"
+]
+},
+"DRI_162": {
+"hp": 70,
+"attacks": []
+},
+"POR_87": {
+"hp": null,
+"attacks": []
+},
+"POR_20": {
+"hp": 70,
+"attacks": [
+"water gun"
+]
+},
+"POR_21": {
+"hp": 330,
+"attacks": [
+"jetting blow",
+"nebula beam"
+]
+},
+"ASC_47": {
+"hp": 310,
+"attacks": [
+"resentful refrain",
+"absolute snow"
+]
+},
+"TEF_160": {
+"hp": null,
+"attacks": []
+},
+"POR_72": {
+"hp": null,
+"attacks": []
+},
+"CRI_84": {
+"hp": null,
+"attacks": []
+},
+"JTG_97": {
+"hp": 70,
+"attacks": [
+"scratch"
+]
+},
+"JTG_98": {
+"hp": 280,
+"attacks": [
+"night joker"
+]
+},
+"JTG_116": {
+"hp": 130,
+"attacks": [
+"powerful rage",
+"virtuous flame"
+]
+},
+"ASC_155": {
+"hp": 130,
+"attacks": [
+"shred",
+"rampaging thunder"
+]
+},
+"JTG_96": {
+"hp": 70,
+"attacks": [
+"thieving swipe"
+]
+},
+"PRE_112": {
+"hp": null,
+"attacks": []
+},
+"JTG_143": {
+"hp": null,
+"attacks": []
+},
+"JTG_153": {
+"hp": null,
+"attacks": []
+},
+"PFL_92": {
+"hp": null,
+"attacks": []
+},
+"PFL_83": {
+"hp": 70,
+"attacks": [
+"run around",
+"kick"
+]
+},
+"PFL_84": {
+"hp": 330,
+"attacks": [
+"gale thrust",
+"spiky hopper"
+]
+},
+"ASC_197": {
+"hp": null,
+"attacks": []
+},
+"TWM_14": {
+"hp": 70,
+"attacks": [
+"smash kick",
+"branch poke"
+]
+},
+"TEF_150": {
+"hp": null,
+"attacks": []
+}
+}
